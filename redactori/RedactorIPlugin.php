@@ -16,6 +16,11 @@ class RedactorIPlugin extends BasePlugin
 	    return '1.0.0';
 	}
 
+	public function getSchemaVersion()
+	{
+		return '1.0.0';
+	}
+
 	public function getDeveloper()
 	{
 	    return 'Pixel & Tonic';
