@@ -28,7 +28,7 @@ class RedactorIPlugin extends BasePlugin
 
 	public function getReleaseFeedUrl()
 	{
-		return 'https://raw.githubusercontent.com/pixelandtonic/RedactorI/1.0.0/releases.json';
+		return 'https://raw.githubusercontent.com/pixelandtonic/RedactorI/master/releases.json';
 	}
 
 	public function onAfterInstall()
