@@ -24,7 +24,7 @@ class RedactorIFieldType extends BaseFieldType
 	 */
 	public function getName()
 	{
-		return 'Redactor I';
+		return 'Rich Text (Redactor I)';
 	}
 
 	/**

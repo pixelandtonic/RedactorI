@@ -1,12 +1,12 @@
 # Redactor I plugin for Craft CMS
 
-This plugin provides a “Redactor I” field type for [Craft CMS](http://craftcms.com) based the legacy version of [Redactor](https://imperavi.com/redactor/), for sites that are not ready to make the switch to Redactor II.
+This plugin provides a Redactor “I”-powered rich text field type for [Craft CMS](http://craftcms.com), for sites that are not ready to make the switch to Redactor II.
 
 ## Installation
 
 To install Redactor I, copy the redactori/ folder into craft/plugins/, and then go to Settings → Plugins and click the “Install” button next to “Redactor I”.
 
-The plugin will automatically convert all existing Rich Text fields to Redactor I on install, and vise-versa on uninstall. Note that as long as the plugin is installed, any new rich text fields should be created using the “Redactor I” field type rather than “Rich Text”. Running both Redactor I and Redactor II (“Rich Text”) side-by-side will cause CSS and JavaScript conflicts.
+The plugin will automatically convert all existing Rich Text fields to its own “Rich Text (Redactor I)” field type on install, and vise-versa on uninstall. Note that as long as the plugin is installed, any new rich text fields should be created using the “Rich Text (Redactor I)” field type rather than “Rich Text”. Running both old and new versions of Redactor side-by-side will cause CSS and JavaScript conflicts.
 
 ## Configuration
 
