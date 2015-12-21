@@ -15,3 +15,13 @@ Redactor I used different configuration options than Redactor II, so you will ne
 If your config files have already been updated for Redactor II, you can reverse-implement the changes described in [this support article](https://craftcms.com/help/redactor-ii-configs).
 
 If you’re starting a new site from scratch, you can copy the Simple.json and Standard.json files found within [config/redactor/](config/redactor/) into your site’s craft/config/redactor/ folder.
+
+## Changelog
+
+### 1.0.1
+
+* Implemented Craft 2.5's `getPluginUrl` and `getDocumentationUrl` methods.
+
+### 1.0.0
+
+* Initial release
