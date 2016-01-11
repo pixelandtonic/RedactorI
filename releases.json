@@ -1,5 +1,13 @@
 [
     {
+        "version": "1.0.2",
+        "downloadUrl": "https://github.com/pixelandtonic/RedactorI/archive/1.0.2.zip",
+        "date": "2016-01-11T17:00:00-08:00",
+        "notes": [
+            "[Improved] Added support for adding custom hashes to entry URLs alongside the reference hash, e.g. `href=\"my/entry#foo#entry:123:url\"`."
+        ]
+    },
+    {
         "version": "1.0.1",
         "downloadUrl": "https://github.com/pixelandtonic/RedactorI/archive/1.0.1.zip",
         "date": "2015-20-20T17:00:00-08:00",

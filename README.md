@@ -18,6 +18,10 @@ If you’re starting a new site from scratch, you can copy the Simple.json and S
 
 ## Changelog
 
+### 1.0.2
+
+* Added support for adding custom hashes to entry URLs alongside the reference hash, e.g. `href="my/entry#foo#entry:123:url"`.
+
 ### 1.0.1
 
 * Implemented Craft 2.5's `getPluginUrl` and `getDocumentationUrl` methods.
