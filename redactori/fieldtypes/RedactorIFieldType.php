@@ -67,7 +67,7 @@ class RedactorIFieldType extends BaseFieldType
 			$transformOptions[] = array('label' => $transform->name, 'value' => $transform->id );
 		}
 
-		return craft()->templates->render('_components/fieldtypes/RichText/settings', array(
+		return craft()->templates->render('redactori/settings', array(
 			'settings' => $this->getSettings(),
 			'configOptions' => $configOptions,
 			'assetSourceOptions' => $sourceOptions,
