@@ -55,7 +55,7 @@ class RedactorIFieldType extends BaseFieldType
 			'mediumtext' => Craft::t('MediumText (stores about 4GB)')
 		);
 
-		return craft()->templates->render('_components/fieldtypes/RichText/settings', array(
+		return craft()->templates->render('redactori/settings', array(
 			'settings' => $this->getSettings(),
 			'configOptions' => $configOptions,
 			'columns' => $columns,
