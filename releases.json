@@ -1,5 +1,19 @@
 [
     {
+        "version": "1.1.0",
+        "downloadUrl": "https://github.com/pixelandtonic/RedactorI/archive/1.1.0.zip",
+        "date": "2016-03-10T17:00:00-08:00",
+        "notes": [
+            "[Added] Redactor I now requires Craft CMS 2.6 or later.",
+            "[Added] Added support for the [addRichTextLinkOptions](https://craftcms.com/docs/plugins/hooks-reference#addRichTextLinkOptions) hook, enabling plugins to register custom Link menu options.",
+            "[Added] Added support for the `file` toolbar button, replacing the “Link to an asset” Link menu option.",
+            "[Added] Added a new “Available Asset Sources” field setting, making it possible to customize which asset sources should be available when selecting images or files.",
+            "[Added] Added a new “Available Image Transforms” field setting, making it possible to customize which image transforms are available when selecting images.",
+            "[Fixed] Fixed an error that occurred on Edit Field pages in Craft CMS 2.6.",
+            "[Fixed] Fixed a bug where dragging an image onto Redactor I fields would show a progress bar, even though drag-uploading is not supported.",
+        ]
+    },
+    {
         "version": "1.0.2",
         "downloadUrl": "https://github.com/pixelandtonic/RedactorI/archive/1.0.2.zip",
         "date": "2016-01-11T17:00:00-08:00",

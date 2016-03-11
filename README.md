@@ -2,6 +2,10 @@
 
 This plugin provides a Redactor “I”-powered rich text field type for [Craft CMS](http://craftcms.com), for sites that are not ready to make the switch to Redactor II.
 
+## Requirements
+
+Redactor I requires Craft CMS 2.6 or later.
+
 ## Installation
 
 To install Redactor I, copy the redactori/ folder into craft/plugins/, and then go to Settings → Plugins and click the “Install” button next to “Redactor I”.
@@ -17,6 +21,16 @@ If your config files have already been updated for Redactor II, you can reverse-
 If you’re starting a new site from scratch, you can copy the Simple.json and Standard.json files found within [config/redactor/](config/redactor/) into your site’s craft/config/redactor/ folder.
 
 ## Changelog
+
+### 1.1.0
+
+* Redactor I now requires Craft CMS 2.6 or later.
+* Added support for the [addRichTextLinkOptions](https://craftcms.com/docs/plugins/hooks-reference#addRichTextLinkOptions) hook, enabling plugins to register custom Link menu options.
+* Added support for the `file` toolbar button, replacing the “Link to an asset” Link menu option.
+* Added a new “Available Asset Sources” field setting, making it possible to customize which asset sources should be available when selecting images or files.
+* Added a new “Available Image Transforms” field setting, making it possible to customize which image transforms are available when selecting images.
+* Fixed an error that occurred on Edit Field pages in Craft CMS 2.6.
+* Fixed a bug where dragging an image onto Redactor I fields would show a progress bar, even though drag-uploading is not supported.
 
 ### 1.0.2
 
