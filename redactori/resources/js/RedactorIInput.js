@@ -39,6 +39,9 @@ Craft.RedactorIInput = Garnish.Base.extend(
 		}
 
 		this.redactorConfig.imageUpload = true;
+		this.redactorConfig.fileUpload = true;
+		this.redactorConfig.dragImageUpload = false;
+		this.redactorConfig.dragFileUpload = false;
 
 		var that = this,
 			originalInitCallback = this.redactorConfig.initCallback;
