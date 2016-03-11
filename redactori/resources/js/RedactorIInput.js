@@ -229,6 +229,7 @@ Craft.RedactorIInput = Garnish.Base.extend(
 		{
 			this.assetLinkSelectionModal = Craft.createElementSelectorModal('Asset', {
 				storageKey: 'RichTextFieldType.LinkToAsset',
+				sources: this.assetSources,
 				criteria: { locale: this.elementLocale },
 				onSelect: $.proxy(function(assets)
 				{
