@@ -132,26 +132,24 @@ class RedactorIFieldType extends BaseFieldType
 		$id = craft()->templates->formatInputId($name);
 		$localeId = (isset($this->element) ? $this->element->locale : craft()->language);
 
+		$settings = array(
+			'id'              => craft()->templates->namespaceInputId($id),
+			'linkOptions'     => $this->_getLinkOptions(),
+			'assetSources'    => $this->_getAssetSources($this->getSettings()->availableAssetSources),
+			'transforms'      => $this->_getTransforms(),
+			'elementLocale'   => $localeId,
+			'redactorConfig'  => JsonHelper::decode(JsonHelper::removeComments($configJs)),
+			'redactorLang'    => static::$_redactorLang,
+		);
+
 		if (isset($this->model) && $this->model->translatable)
 		{
+			// Explicitly set the text direction
 			$locale = craft()->i18n->getLocaleData($localeId);
-			$orientation = '"'.$locale->getOrientation().'"';
-		}
-		else
-		{
-			$orientation = 'Craft.orientation';
+			$settings['direction'] = $locale->getOrientation();
 		}
 
-		craft()->templates->includeJs('new Craft.RedactorIInput(' .
-			'"'.craft()->templates->namespaceInputId($id).'", ' .
-			JsonHelper::encode($this->_getSectionSources()).', ' .
-			JsonHelper::encode($this->_getCategorySources()).', ' .
-			JsonHelper::encode($this->_getAssetSources($this->getSettings()->availableAssetSources)).', ' .
-			'"'.$localeId.'", ' .
-			$orientation.', ' .
-			JsonHelper::decode(JsonHelper::removeComments($configJs)).', ' .
-			'"'.static::$_redactorLang.'"' .
-		');');
+		craft()->templates->includeJs('new Craft.RedactorIInput('.JsonHelper::encode($settings).');');
 
 		if ($value instanceof RichTextData)
 		{
@@ -490,7 +488,6 @@ class RedactorIFieldType extends BaseFieldType
 	private function _includeFieldResources($configJs)
 	{
 		craft()->templates->includeCssResource('redactori/lib/redactor/redactor.css');
-		craft()->templates->includeCssResource('redactori/css/redactori.css');
 
 		// Gotta use the uncompressed Redactor JS until the compressed one gets our Live Preview menu fix
 		craft()->templates->includeJsResource('redactori/lib/redactor/redactor.js');
