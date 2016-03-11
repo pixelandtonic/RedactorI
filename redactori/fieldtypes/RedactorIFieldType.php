@@ -311,7 +311,6 @@ class RedactorIFieldType extends BaseFieldType
 
 		$sectionSources = $this->_getSectionSources();
 		$categorySources = $this->_getCategorySources();
-		$assetSources = $this->_getAssetSources();
 
 		if ($sectionSources)
 		{
@@ -328,15 +327,6 @@ class RedactorIFieldType extends BaseFieldType
 				'optionTitle' => Craft::t('Link to a category'),
 				'elementType' => 'Category',
 				'sources' => $categorySources,
-			);
-		}
-
-		if ($assetSources)
-		{
-			$linkOptions[] = array(
-				'optionTitle' => Craft::t('Link to an asset'),
-				'elementType' => 'Asset',
-				'sources' => $assetSources,
 			);
 		}
 
