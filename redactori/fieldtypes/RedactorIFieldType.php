@@ -478,6 +478,7 @@ class RedactorIFieldType extends BaseFieldType
 	private function _includeFieldResources($configJs)
 	{
 		craft()->templates->includeCssResource('redactori/lib/redactor/redactor.css');
+        craft()->templates->includeCssResource('redactori/css/redactori.css');
 
 		// Gotta use the uncompressed Redactor JS until the compressed one gets our Live Preview menu fix
 		craft()->templates->includeJsResource('redactori/lib/redactor/redactor.js');

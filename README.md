@@ -22,6 +22,11 @@ If you’re starting a new site from scratch, you can copy the Simple.json and S
 
 ## Changelog
 
+### 1.1.1
+
+* Fixed a bug where unordered lists in Rich Text fields weren’t getting bullets.
+* Fixed a bug where ordered lists were getting indented `40px` rather than `2em`.
+
 ### 1.1.0
 
 * Redactor I now requires Craft CMS 2.6 or later.

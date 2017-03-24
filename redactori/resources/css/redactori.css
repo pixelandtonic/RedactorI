@@ -1,0 +1,3 @@
+.redactor-editor ul { list-style: disc; }
+body.ltr .redactor-editor ol { padding-left: 2em !important; }
+body.rtl .redactor-editor ol { padding-right: 2em !important; }
