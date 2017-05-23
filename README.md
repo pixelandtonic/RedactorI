@@ -1,4 +1,4 @@
-:warning: **This plugin is no longer officially supported, as browser updates are beginning to leave to leave the old Redactor “I” codebase in the dust. We recommend [uninstalling](#uninstallation) the plugin and returning to Craft’s built-in Redactor II editor.**
+:warning: **This plugin is no longer officially supported, as browser updates are beginning to leave the old Redactor “I” codebase in the dust. We recommend [uninstalling](#uninstallation) the plugin and returning to Craft’s built-in Redactor II editor.**
 
 ---
 
