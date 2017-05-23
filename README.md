@@ -1,3 +1,5 @@
+> **Note:** This plugin is no longer officially supported, as browser updates are [beginning](https://github.com/pixelandtonic/RedactorI/issues/9) to leave to leave the old Redactor “I” codebase in the dust. We recommend [uninstalling](#uninstallation) the plugin and returning to Craft’s built-in Redactor II editor.
+
 # Redactor I plugin for Craft CMS
 
 This plugin provides a Redactor “I”-powered rich text field type for [Craft CMS](http://craftcms.com), for sites that are not ready to make the switch to Redactor II.
@@ -19,6 +21,10 @@ Redactor I used different configuration options than Redactor II, so you will ne
 If your config files have already been updated for Redactor II, you can reverse-implement the changes described in [this support article](https://craftcms.com/help/redactor-ii-configs).
 
 If you’re starting a new site from scratch, you can copy the Simple.json and Standard.json files found within [config/redactor/](config/redactor/) into your site’s craft/config/redactor/ folder.
+
+## Uninstallation
+
+To uninstall Redactor I and go back to using Craft’s built-in Redactor II editor, simply go to Settings → Plugins and click the “Uninstall” button next to “Redactor I”.
 
 ## Changelog
 
