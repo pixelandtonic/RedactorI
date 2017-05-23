@@ -1,4 +1,6 @@
-> **Note:** This plugin is no longer officially supported, as browser updates are [beginning](https://github.com/pixelandtonic/RedactorI/issues/9) to leave to leave the old Redactor “I” codebase in the dust. We recommend [uninstalling](#uninstallation) the plugin and returning to Craft’s built-in Redactor II editor.
+**NOTE: This plugin is no longer officially supported, as browser updates are [beginning](https://github.com/pixelandtonic/RedactorI/issues/9) to leave to leave the old Redactor “I” codebase in the dust. We recommend [uninstalling](#uninstallation) the plugin and returning to Craft’s built-in Redactor II editor.**
+
+---
 
 # Redactor I plugin for Craft CMS
 
